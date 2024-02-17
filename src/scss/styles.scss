@@ -1,0 +1,26 @@
+
+@import "~bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+$primary: rgb(255, 255, 255);
+$secondary: rgb(255, 255, 255);
+
+$theme-colors:(
+    "primary": $primary,
+    "secondary": $secondary,
+);
+    
+/* Muutsin värvi tooni ja nime ning panin ta
+ uhenduma theme coloritega*/
+
+    $brand:(
+        "brand": #ffffff
+    );
+    $theme-colors: map-merge($theme-colors, $brand);
+
+    @import "bootstrap/scss/bootstrap";
+    
+    .card-img-top {
+         aspect-ratio: 4/3;
+         object-fit: cover;
+    }
